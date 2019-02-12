@@ -9,6 +9,7 @@ body {
 .app {
   width: 100%;
 }
+
 .main {
   margin-left: 222px;
   background-image: url(../images/bg-mtn.jpg);
@@ -20,6 +21,11 @@ body {
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+  .main {
+    margin: 0px;
+  }
 }
 
 .flex {

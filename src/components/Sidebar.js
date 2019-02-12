@@ -11,7 +11,7 @@ import profilePic from "../images/profile-pic.png";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div id="sidebar">
       <div className="sidebar-title">
         <div id="sidebar-name">
           Garret <div>Sweetwood</div>
