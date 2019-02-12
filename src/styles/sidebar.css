@@ -1,0 +1,108 @@
+.sidebar {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 100;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  border-right: solid gray 1px;
+  background-color: white;
+  box-shadow: 2px 2px 6px 0px rgb(128, 128, 128);
+}
+
+.sidebar-links > a {
+  text-decoration: none;
+  height: 45px;
+  transition: 300ms;
+  color: black;
+  font-size: 1.2rem;
+}
+
+#profile-photo {
+  margin-top: 25px;
+  height: 170px;
+  width: 180px;
+  margin-bottom: 11px;
+}
+
+#about-link:hover {
+  border-left: solid rgb(60, 165, 130) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#experience-link:hover {
+  border-left: solid rgb(200, 54, 17) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#projects-link:hover {
+  border-left: solid rgb(100, 60, 165) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#skills-link:hover {
+  border-left: solid rgb(24, 42, 202) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#awards-link:hover {
+  border-left: solid rgb(255, 251, 33) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#education-link:hover {
+  border-left: solid rgb(47, 156, 61) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+#contact-link:hover {
+  border-left: solid rgb(158, 104, 53) 12px;
+  background-color: rgb(250, 250, 250);
+}
+
+.sidebar-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid gray 1px;
+  color: black;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  font-size: 1.2rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+
+#sidebar-name {
+  text-align: center;
+  font-size: 2rem;
+  color: teal;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 100;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links > a {
+  padding-left: 20px;
+  line-height: 45px;
+  /* border-bottom: solid gray 1px; */
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.link-icon {
+  width: 30px;
+  margin-right: 8px;
+}
+
+/* user #459669
+
+
+*/
