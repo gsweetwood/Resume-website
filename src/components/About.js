@@ -5,7 +5,7 @@ const About = () => (
   <div id="about">
     <SectionHeader sectionHeader="About" id="aboutHeader" />
     <div className="about-section">
-      <blockquote className="title-font">
+      <blockquote id="quote" className="title-font">
         <h2>
           A Full Stack Developer with diverse experience and extensive
           education; passionate about innovation, problem-solving, and product

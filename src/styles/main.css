@@ -22,11 +22,6 @@ body {
   font-weight: 300;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 480px) {
-  .main {
-    margin: 0px;
-  }
-}
 
 .flex {
   display: flex;
@@ -75,17 +70,14 @@ h1 {
 }
 .experience-list {
   flex-shrink: 1;
-  margin-left: 40px;
-  margin-right: 40px;
-  min-width: 500px;
+
   max-width: 1000px;
 
   /*  border: solid green 3px; */
 }
 .experience-card {
   padding: 15px;
-  margin-bottom: 60px;
-  width: 100%;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -106,11 +98,12 @@ h1 {
 
 .company-icon {
   width: 125px;
-  margin-right: 50px;
+  margin-right: 1rem;
 }
 
 .position-title {
   margin-left: auto;
+  text-align: right;
 }
 
 .exp-card-footer {
@@ -258,7 +251,7 @@ img.skills-icons {
 .education-card {
   max-width: 80%;
   font-size: 1.5rem;
-  min-width: 550px;
+
   padding: 15px;
   margin: 20px;
 }
@@ -300,7 +293,7 @@ img.skills-icons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 200px;
+  padding-left: 15%;
 }
 
 .created-by {
@@ -321,7 +314,73 @@ img.skills-icons {
   font-weight: 700;
   margin-bottom: 20px;
   display: flex;
+  flex-shrink: 1;
   align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin: 0px;
+  }
+
+  #quote {
+    font-size: 1rem;
+  }
+
+  .about-section > p {
+    font-size: 1rem;
+  }
+
+  .company-icon {
+    width: 75px;
+  }
+
+  .contact-section {
+    padding-left: 3%;
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  .project-image {
+    height: 256px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-card {
+    flex-grow: 0;
+    min-width: 320px;
+
+    margin-bottom: 60px;
+  }
+
+  .award-body {
+    display: flex;
+    flex-direction: column;
+  }
+  #ab-award {
+    height: 81px;
+  }
+  .award-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  .award-icon {
+    margin: 5px;
+    max-height: 81px;
+
+    height: auto;
+    width: auto;
+  }
+
+  .exp-card-header {
+    font-size: 1.25rem;
+  }
 }

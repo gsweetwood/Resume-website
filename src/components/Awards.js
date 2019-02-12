@@ -13,7 +13,9 @@ const Awards = () => (
           Medical Design Excelence Award - Bronze Winner
         </div>
         <div className="award-body">
-          <img src={mdeaIcon} className="award-icon" id="mdea-award" />
+          <div className="award-icon-container">
+            <img src={mdeaIcon} className="award-icon" id="mdea-award" />
+          </div>
           International Award-Winning Design: 2016 Medical Design Excellence
           Award (MDEA) Winner – Bronze Winner. Conceptualized, ideated, and
           developed a product for safe patient handling to prevent and decrease
@@ -25,7 +27,9 @@ const Awards = () => (
       <div className="card award-card">
         <div className="award-title title-font">Above and Beyond Award</div>
         <div className="award-body">
-          <img src={abAward} className="award-icon" id="ab-award" />
+          <div className="award-icon-container">
+            <img src={abAward} className="award-icon" id="ab-award" />
+          </div>
           Awarded by Sage Products Inc. Recognized for significant contributions
           to company success; going above and beyond job requirements.
         </div>
@@ -36,7 +40,10 @@ const Awards = () => (
           publication - The Lichenologist
         </div>
         <div className="award-body">
-          <img src={pubIcon} className="award-icon" id="ab-award" />
+          <div className="award-icon-container">
+            <img src={pubIcon} className="award-icon" />
+          </div>
+
           <div id="publication">
             Ascospore ontogeny and discharge in megalosporous Trypetheliaceae
             and Graphidaceae (Ascomycota: Dothideomycetes and Lecanoromycetes)
