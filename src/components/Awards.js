@@ -26,9 +26,8 @@ const Awards = () => (
         <div className="award-title title-font">Above and Beyond Award</div>
         <div className="award-body">
           <img src={abAward} className="award-icon" id="ab-award" />
-          Significant contributions to company success; going above and beyond
-          job requirements. This is what happens when you add more words to the
-          card, the card will expand.
+          Awarded by Sage Products Inc. Recognized for significant contributions
+          to company success; going above and beyond job requirements.
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const About = () => (
     <div className="about-section">
       <blockquote className="title-font">
         <h2>
-          A Full-Stack Developer with diverse experience and extensive
+          A Full Stack Developer with diverse experience and extensive
           education; passionate about innovation, problem-solving, and product
           design.
         </h2>
