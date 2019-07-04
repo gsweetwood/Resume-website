@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -318,6 +322,10 @@ img.skills-icons {
   align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+#resume-icon {
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
