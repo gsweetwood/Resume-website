@@ -2,9 +2,9 @@ import React from "react";
 import SectionHeader from "./sub-components/SectionHeader";
 
 const About = () => (
-  <div id="about">
+  <div id="about" className="about-section">
     <SectionHeader sectionHeader="About" id="aboutHeader" />
-    <div className="about-section">
+    <div>
       <blockquote id="quote" className="title-font">
         <h2>
           A Full Stack Developer with diverse experience and extensive

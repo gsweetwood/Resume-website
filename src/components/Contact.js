@@ -6,12 +6,12 @@ import gitIcon from "../images/icons/git-icon.png";
 import docIcon from "../images/icons/download-resume-icon.png";
 
 const Contact = () => (
-  <section id="contact">
+  <section id="contact" className="contact-section">
     <SectionHeader sectionHeader="contact" />
-    <div className="contact-section">
+    <div>
       <div className="contact-item">
         <img src={emailIcon} className="contact-icon" id="email-icon" />
-        garretsweetwood6@gmail.com
+        <span>garretsweetwood6@gmail.com</span>
       </div>
 
       <a
@@ -19,12 +19,12 @@ const Contact = () => (
         className="contact-item"
       >
         <img src={linkedinIcon} className="contact-icon" id="linkedin-icon" />
-        <div>linkedin.com/in/garretsweetwood</div>
+        <span>linkedin.com/in/garretsweetwood</span>
       </a>
 
       <a href="https://github.com/gsweetwood" className="contact-item">
         <img src={gitIcon} className="contact-icon" id="git-icon" />
-        <div>github.com/garretsweetwood</div>
+        <span>github.com/garretsweetwood</span>
       </a>
 
       <a
@@ -32,9 +32,10 @@ const Contact = () => (
         className="contact-item"
       >
         <img src={docIcon} className="contact-icon" id="resume-icon" />
-        <div>Downloadable Resume</div>
+        <span>Downloadable Resume</span>
       </a>
     </div>
+
     <div className="created-by">Created by Garret Sweetwood</div>
   </section>
 );
