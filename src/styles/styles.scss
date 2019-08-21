@@ -1,3 +1,6 @@
+@import "mobile";
+@import "sidebar";
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,26 +8,54 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-}
-#root {
-  width: 100%;
-  overflow: hidden;
-}
-.app {
-  width: 100%;
+  box-sizing: border-box;
 }
 
-.main {
-  margin-left: 222px;
-  background-image: url(../images/bg-mtn.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  max-width: 100%;
-  background-size: cover;
+h2 {
+  margin-top: 15px;
+}
+
+blockquote {
+  border-left: 5px solid #95733c;
+  color: #95733c;
+  font-size: 125%;
+
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}
+
+.App {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  color: white;
 
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
+  overflow: hidden;
+}
+
+// WELCOME SECTION
+.welcome-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  h3 {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+}
+
+.down-arrow {
+  width: 40px;
 }
 
 .flex {
@@ -36,55 +67,57 @@ body {
   font-weight: 700;
 }
 
-h1 {
-  font-weight: 100;
-  margin: 0;
-  font-size: 2rem;
-}
-
 .about-section {
-  padding: 0 30px;
-  font-weight: 400;
-}
-
-.about-section > p {
-  font-family: "Kalam", cursive;
-  font-size: 1.5rem;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  blockquote {
+    margin: 20px 5% 0 5%;
+  }
+  p {
+    margin: 20px 10% 0 10%;
+    font-size: 1.5rem;
+  }
 }
 
 .section-header {
   background-color: rgba(2, 109, 109, 0.856);
-  width: 100%;
+  width: 90%;
   color: white;
   text-transform: uppercase;
   margin-bottom: 60px;
   font-weight: 500;
   height: 100px;
-  padding-left: 50px;
   display: flex;
   align-items: center;
+  padding-left: 50px;
 }
 
 .experience-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
 }
 .experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 1;
-  max-width: 1000px;
 }
 
 .experience-card {
+  flex-shrink: 1;
   padding: 15px;
   margin-bottom: 30px;
+  width: 80%;
 }
 
 .card {
-  box-shadow: 2px 2px 5px 3px rgb(128, 128, 128);
+  box-shadow: 4px 3px 6px 3px rgb(128, 128, 128);
   border-radius: 2px;
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.623);
 }
 
 .exp-card-header {
@@ -98,7 +131,7 @@ h1 {
 }
 
 .company-icon {
-  width: 125px;
+  max-width: 125px;
   margin-right: 1rem;
 }
 
@@ -112,33 +145,23 @@ h1 {
   padding-top: 15px;
 }
 
-blockquote {
-  border-left: 5px solid #95733c;
-  color: #95733c;
-  font-size: 125%;
-
-  margin: 20px 0;
-  padding-left: 1.5rem;
-}
-
-#aboutHeader {
-  margin-bottom: 0px;
-}
-
-h2 {
-  margin-top: 15px;
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 85%;
 }
 .project-card {
-  flex-grow: 0;
-  min-width: 450px;
+  flex-shrink: 1;
+
   max-width: 450px;
-  margin-bottom: 60px;
+  margin: 30px 15px 30px 15px;
 }
 
 .project-image {
@@ -146,6 +169,7 @@ h2 {
   width: 100%;
   max-width: 100%;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -237,6 +261,7 @@ img.skills-icons {
 .award-icon {
   margin-right: 15px;
   height: 81px;
+  background-color: white;
 }
 
 #ab-award {
@@ -250,7 +275,6 @@ img.skills-icons {
   margin-bottom: 60px;
 }
 .education-card {
-  max-width: 80%;
   font-size: 1.5rem;
 
   padding: 15px;
@@ -266,7 +290,7 @@ img.skills-icons {
 }
 
 .education-body {
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
 }
@@ -293,8 +317,12 @@ img.skills-icons {
 .contact-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 15%;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
 }
 
 .created-by {
@@ -302,12 +330,6 @@ img.skills-icons {
   color: rgb(219, 232, 233);
   text-align: center;
   font-family: "Kalam", cursive;
-}
-.contact-icon {
-  width: 60px;
-  height: 60px;
-  margin-right: 25px;
-  display: flex;
 }
 
 .contact-item {
@@ -319,73 +341,9 @@ img.skills-icons {
   align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  margin-left: 10px;
 }
 
 #resume-icon {
   border-radius: 10px;
-}
-
-@media screen and (max-width: 480px) {
-  .main {
-    margin: 0px;
-  }
-
-  #quote {
-    font-size: 1rem;
-  }
-
-  .about-section > p {
-    font-size: 1rem;
-  }
-
-  .company-icon {
-    width: 75px;
-  }
-
-  .contact-section {
-    padding-left: 3%;
-    font-size: 1rem;
-  }
-
-  .contact-icon {
-    height: 30px;
-    width: 30px;
-    margin-right: 15px;
-  }
-
-  .project-image {
-    height: 256px;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .project-card {
-    flex-grow: 0;
-    min-width: 320px;
-
-    margin-bottom: 60px;
-  }
-
-  .award-body {
-    display: flex;
-    flex-direction: column;
-  }
-  #ab-award {
-    height: 81px;
-  }
-  .award-icon-container {
-    display: flex;
-    justify-content: center;
-  }
-  .award-icon {
-    margin: 5px;
-    max-height: 81px;
-
-    height: auto;
-    width: auto;
-  }
-
-  .exp-card-header {
-    font-size: 1.25rem;
-  }
 }

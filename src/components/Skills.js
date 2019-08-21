@@ -17,7 +17,7 @@ import solidworksIcon from "../images/icons/solidworks.png";
 import mayaIcon from "../images/icons/maya-logo.png";
 
 const Skills = () => (
-  <div id="skills">
+  <div id="skills" className="skills-section">
     <SectionHeader sectionHeader="Skills" />
     <div className="skills-section">
       <SkillsCard skillsCategory="JavaScript">
