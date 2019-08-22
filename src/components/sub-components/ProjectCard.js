@@ -9,6 +9,13 @@ const ProjectCard = props => (
       <div className="project-title title-font">{props.projectTitle}</div>
       <div className="project-details">{props.projectDetails}</div>
     </div>
+    <div className="project-skills">
+      <ul>
+        {props.projectSkills.map(skill => {
+          return <li>{skill}</li>;
+        })}
+      </ul>
+    </div>
   </div>
 );
 
