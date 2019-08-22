@@ -16,7 +16,7 @@ const About = () => (
         I learn quickly, have strong communication and interpersonal skills,
         combined with boundless curiosity and grit. Exceptionally driven and
         hard-working, with aspirations for international travel and immersion,
-        seeking a full-time remote position with a cutting-edge company.
+        seeking a full-time position with a cutting-edge company.
       </p>
       <p>
         Previously 7+ years experience as an awarding-winning Medical Device
