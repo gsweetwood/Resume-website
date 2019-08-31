@@ -1,0 +1,350 @@
+@import "mobile";
+@import "sidebar";
+@import "projects";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+blockquote {
+  border-left: 5px solid #95733c;
+  color: #95733c;
+  font-size: 125%;
+
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}
+
+.App {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  color: white;
+
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+// WELCOME SECTION
+.welcome-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  h3 {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+}
+
+.down-arrow {
+  width: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.title-font {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  blockquote {
+    margin: 20px 5% 0 5%;
+  }
+  p {
+    margin: 20px 10% 0 10%;
+    font-size: 1.5rem;
+  }
+}
+
+.section-header {
+  background-color: rgba(2, 109, 109, 0.856);
+  width: 90%;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  font-weight: 500;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.experience-card {
+  flex-shrink: 1;
+  padding: 15px;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.card {
+  box-shadow: 4px 3px 6px 3px rgb(128, 128, 128);
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+.exp-card-header {
+  border-bottom: solid lightgray 1px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  display: flex;
+  color: rgb(231, 115, 7);
+  font-size: 1.5rem;
+}
+
+.company-icon {
+  max-width: 125px;
+  margin-right: 1rem;
+}
+
+.position-title {
+  margin-left: auto;
+  text-align: right;
+}
+
+.exp-card-footer {
+  border-top: solid lightgray 1px;
+  padding-top: 15px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+}
+.project-card {
+  flex-shrink: 1;
+
+  max-width: 450px;
+  margin: 30px 15px 30px 15px;
+}
+
+.project-image {
+  height: 360px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+
+.project-body {
+  padding: 10px;
+
+  border-top: solid lightgray 1px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: rgb(231, 115, 7);
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-card {
+  width: 80%;
+  min-height: 220px;
+  margin: 30px 60px;
+  padding: 15px;
+}
+
+.skills-header {
+  color: rgb(231, 115, 7);
+  font-size: 1.5rem;
+  border-bottom: solid lightgray 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.skills-icons-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img.skills-icons {
+  height: 90px;
+}
+
+.skills-body {
+  margin-top: 15px;
+}
+
+.icon-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.award-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.award-card {
+  max-width: 80%;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.award-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgb(231, 115, 7);
+  border-bottom: solid gray 1px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.award-body {
+  display: flex;
+}
+
+.award-icon {
+  margin-right: 15px;
+  height: 81px;
+  background-color: white;
+}
+
+#ab-award {
+  height: 90px;
+}
+
+.education-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.education-card {
+  font-size: 1.5rem;
+
+  padding: 15px;
+  margin: 20px;
+}
+
+.degree-title {
+  border-bottom: solid lightgray 1px;
+  font-weight: bold;
+  color: rgb(231, 115, 7);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.education-body {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.school-icon {
+  width: 80px;
+  padding: 10px;
+}
+
+.university-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.university-text > p {
+  margin: 0;
+}
+
+#roosevelt-text {
+  margin-left: 10px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
+
+.created-by {
+  align-self: center;
+  color: rgb(219, 232, 233);
+  text-align: center;
+  font-family: "Kalam", cursive;
+}
+
+.contact-item {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  flex-shrink: 1;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+#resume-icon {
+  border-radius: 10px;
+}
