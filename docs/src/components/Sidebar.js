@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/sidebar.css";
 import projectsIcon from "../images/icons/projects-icon.png";
 import aboutIcon from "../images/icons/about-icon.png";
 import experienceIcon from "../images/icons/experience-icon.png";

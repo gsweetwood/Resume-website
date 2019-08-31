@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Sidebar from "./Sidebar";
 import "../styles/styles.scss";
 import About from "./About";
 import Experience from "./Experience";
