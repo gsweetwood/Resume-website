@@ -8,7 +8,6 @@ import Awards from "./Awards";
 import Education from "./Education";
 import Contact from "./Contact";
 import Welcome from "./Welcome";
-import NewProjects from "./NewProjects";
 
 class App extends Component {
   render() {
@@ -24,7 +23,6 @@ class App extends Component {
           <Awards />
           <Education />
           <Contact />
-          <NewProjects />
         </div>
       </div>
     );
