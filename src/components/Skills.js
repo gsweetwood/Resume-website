@@ -7,7 +7,7 @@ import nodeIcon from "../images/icons/nodejs.png";
 import htmlIcon from "../images/icons/html5.png";
 import cssIcon from "../images/icons/css3.png";
 import sassIcon from "../images/icons/sass.png";
-import gitIcon from "../images/icons/github.png";
+import gitIcon from "../images/icons/github.svg";
 import udemyIcon from "../images/icons/udemy.png";
 import hrIcon from "../images/icons/gold-badge.PNG";
 import bootstrapIcon from "../images/icons/bootstrap.png";

@@ -2,6 +2,8 @@
 @import "sidebar";
 @import "projects";
 
+$title-color: rgb(231, 115, 7);
+$teal: rgba(2, 109, 109, 0.856);
 html {
   scroll-behavior: smooth;
 }
@@ -27,9 +29,7 @@ blockquote {
 
 .App {
   width: 100%;
-  background-color: rgb(39, 39, 39);
-  color: white;
-
+  background-color: rgb(238, 238, 238);
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
@@ -73,6 +73,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+  text-align: justify;
   blockquote {
     margin: 20px 5% 0 5%;
   }
@@ -83,7 +84,7 @@ blockquote {
 }
 
 .section-header {
-  background-color: rgba(2, 109, 109, 0.856);
+  background-color: $teal;
   width: 90%;
   color: white;
   text-transform: uppercase;
@@ -118,7 +119,7 @@ blockquote {
 .card {
   box-shadow: 4px 3px 6px 3px rgb(128, 128, 128);
   border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
 }
 
 .exp-card-header {
@@ -127,7 +128,7 @@ blockquote {
   align-items: center;
   height: 80px;
   display: flex;
-  color: rgb(231, 115, 7);
+  color: $title-color;
   font-size: 1.5rem;
 }
 
@@ -155,13 +156,14 @@ blockquote {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 85%;
 }
 .project-card {
   flex-shrink: 1;
   max-width: 450px;
   margin: 30px 15px 30px 15px;
+  text-align: justify;
 }
 
 .project-image {
@@ -178,13 +180,21 @@ blockquote {
 }
 
 .project-body {
-  padding: 10px;
   border-top: solid lightgray 1px;
+}
+
+.project-details {
+  padding: 10px;
 }
 
 .project-title {
   font-size: 1.5rem;
-  color: rgb(231, 115, 7);
+  min-height: 60px;
+  color: $title-color;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .proj-link {
@@ -192,10 +202,10 @@ blockquote {
   justify-content: center;
   a,
   a:visited {
-    color: yellow;
+    color: rgb(0, 140, 255);
     font-weight: bolder;
     font-size: 1.5rem;
-    border: yellow solid 3px;
+    border: rgb(0, 140, 255) solid 3px;
     border-radius: 3px;
     padding: 10px 30px;
     margin-bottom: 15px;
@@ -215,7 +225,7 @@ blockquote {
 }
 
 .skills-header {
-  color: rgb(231, 115, 7);
+  color: $title-color;
   font-size: 1.5rem;
   border-bottom: solid lightgray 1px;
   padding-top: 15px;
@@ -262,7 +272,7 @@ img.skills-icons {
 .award-title {
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: rgb(231, 115, 7);
+  color: $title-color;
   border-bottom: solid gray 1px;
   margin-bottom: 10px;
   padding-top: 15px;
@@ -299,13 +309,12 @@ img.skills-icons {
 .degree-title {
   border-bottom: solid lightgray 1px;
   font-weight: bold;
-  color: rgb(231, 115, 7);
+  color: $title-color;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .education-body {
-  color: white;
   display: flex;
   align-items: center;
 }
@@ -342,7 +351,6 @@ img.skills-icons {
 
 .created-by {
   align-self: center;
-  color: rgb(219, 232, 233);
   text-align: center;
   font-family: "Kalam", cursive;
 }
@@ -355,8 +363,8 @@ img.skills-icons {
   flex-shrink: 1;
   align-items: center;
   text-decoration: none;
-  color: rgb(255, 255, 255);
   margin-left: 10px;
+  color: black;
 }
 
 #resume-icon {

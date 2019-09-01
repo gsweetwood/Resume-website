@@ -13,22 +13,24 @@ const About = () => (
         </h2>
       </blockquote>
       <p>
-        I learn quickly, have strong communication and interpersonal skills,
-        combined with boundless curiosity and grit. Exceptionally driven and
-        hard-working, with aspirations for international travel and immersion,
-        seeking a full-time position with a cutting-edge company.
-      </p>
-      <p>
-        Previously 7+ years experience as an awarding-winning Medical Device
-        Engineer, working to design, engineer, and test world-class products.
-        Since returning to school 3 years ago and earning a second B.S. degree
-        in Computer Science, my knowledge and passion for software development
-        grows daily. I am currently consulting on Front-End Development for IBM.
-      </p>
-      <p>
-        Currently residing in Seattle, Washington with my wife, Beth, our dog,
-        and two cats. In my spare time, I enjoy hiking, scuba diving,
-        photography, gaming, and geeking out about all things science.
+        Hello, my name is Garret Sweetwood. I’m an award-winning medical device
+        engineer making a career switch into Software Engineering. My curiosity,
+        focus on user needs, and determination led me to ideate, design,
+        develop, and launch a product which won an international award for
+        excellence and became the company’s fastest growing product in their
+        history. It’s important to note that all of these activities were well
+        outside the scope of my position at the time. My career thus far has
+        depended greatly on working cohesively with diverse teams, effective
+        communication, persevering through failure, and rapid adaptability. I
+        have a true passion for innovation, learning, and making a real impact
+        on the world. This drive is what led me to return to school and earn a
+        second degree in Computer Science. Since graduation, I have focused on
+        front-end development with React, JavaScript, HTML, and CSS and also
+        back-end development with NodeJS and MySQL. Recently, I completed a
+        front-end consulting project with IBM and I am now looking to commit
+        full time to an exciting new team. If you are looking for new talent who
+        knows what it takes and is eager to dive in and work hard, I would love
+        the opportunity to speak with you.
       </p>
     </div>
   </div>

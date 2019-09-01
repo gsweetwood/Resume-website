@@ -29,7 +29,7 @@ const Projects = () => (
 
       <ProjectCard
         projectImage={inspectionDashScreenshot}
-        projectTitle="Manufacturing Dashboard"
+        projectTitle="Manufacturing Dashboard - IBM"
         projectDetails="An manufacturing inspection dashboard that displays real-time results, trending, graphical analysis, and alerts."
         projectSkills={[
           "React.js",
