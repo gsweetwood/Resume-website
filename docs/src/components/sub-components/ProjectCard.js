@@ -15,6 +15,7 @@ const ProjectCard = props => (
           return <li>{skill}</li>;
         })}
       </ul>
+      <span className="proj-link">{props.children}</span>
     </div>
   </div>
 );

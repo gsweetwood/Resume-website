@@ -160,7 +160,6 @@ blockquote {
 }
 .project-card {
   flex-shrink: 1;
-
   max-width: 450px;
   margin: 30px 15px 30px 15px;
 }
@@ -169,6 +168,7 @@ blockquote {
   height: 360px;
   width: 100%;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .image-container {
@@ -179,13 +179,27 @@ blockquote {
 
 .project-body {
   padding: 10px;
-
   border-top: solid lightgray 1px;
 }
 
 .project-title {
   font-size: 1.5rem;
   color: rgb(231, 115, 7);
+}
+
+.proj-link {
+  display: flex;
+  justify-content: center;
+  a,
+  a:visited {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border: yellow solid 3px;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .skills-section {

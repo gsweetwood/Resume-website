@@ -14,6 +14,20 @@ const Projects = () => (
     <SectionHeader sectionHeader="Projects" />
     <div className="projects-list">
       <ProjectCard
+        projectImage="https://media1.tenor.com/images/338b129fe0f60be70dbd6298f7b64604/tenor.gif?itemid=5495549"
+        projectTitle="Current Project"
+        projectDetails="A Full Stack e-commerce website complete with MySQL database, Node.js and Express backend server, and authentication."
+        projectSkills={[
+          "Node.js",
+          "React.js",
+          "Express",
+          "MySQL",
+          "REST API",
+          "Authentication"
+        ]}
+      />
+
+      <ProjectCard
         projectImage={inspectionDashScreenshot}
         projectTitle="Manufacturing Dashboard"
         projectDetails="An manufacturing inspection dashboard that displays real-time results, trending, graphical analysis, and alerts."
@@ -36,7 +50,15 @@ const Projects = () => (
           "JavaScript",
           "Sass"
         ]}
-      />
+      >
+        <a
+          href="https://blissful-galileo-d1bea6.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GIVE IT A TRY!
+        </a>
+      </ProjectCard>
 
       <ProjectCard
         projectImage={waScreenshot}
