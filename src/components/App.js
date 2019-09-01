@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import * as Scroll from "react-scroll";
+import { scroller } from "react-scroll";
 import "../styles/styles.scss";
 import About from "./About";
 import Experience from "./Experience";
@@ -10,6 +12,11 @@ import Contact from "./Contact";
 import Welcome from "./Welcome";
 
 class App extends Component {
+  componentDidMount() {
+    setTimeout(() => {
+      scroller.scrollTo("about-section", { duration: 1000, offset: -50 });
+    }, 3500);
+  }
   render() {
     return (
       <div className="App">

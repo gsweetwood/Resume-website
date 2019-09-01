@@ -1,6 +1,7 @@
 @import "mobile";
 @import "sidebar";
 @import "projects";
+@import "animations";
 
 $title-color: rgb(231, 115, 7);
 $teal: rgba(2, 109, 109, 0.856);
@@ -48,15 +49,33 @@ blockquote {
     text-align: center;
     font-weight: 100;
     font-size: 3rem;
+    opacity: 0;
+    animation-name: slideInFromTop;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
   }
   h3 {
+    opacity: 0;
     font-weight: 100;
     font-size: 2rem;
+    animation-name: slideInFromTop;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
   }
 }
 
 .down-arrow {
   width: 40px;
+  opacity: 0;
+  animation-name: slideInFromTop;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .flex {
@@ -190,8 +209,8 @@ blockquote {
 .project-title {
   font-size: 1.5rem;
   min-height: 60px;
-  color: $title-color;
-  background: rgb(0, 0, 0);
+  color: black;
+  background: #e2deda;
   display: flex;
   align-items: center;
   padding: 0 10px;
