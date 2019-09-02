@@ -21,6 +21,7 @@ const Projects = () => (
           "Node.js",
           "React.js",
           "Express",
+          "CRUD operations",
           "MySQL",
           "REST API",
           "Authentication"

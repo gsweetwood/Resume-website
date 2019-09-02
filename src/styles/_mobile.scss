@@ -64,9 +64,10 @@
   }
 
   .project-image {
-    height: 256px;
-
+    height: 200px;
     max-width: 100%;
+    background: #e2deda;
+    object-fit: contain;
   }
 
   .projects-list {

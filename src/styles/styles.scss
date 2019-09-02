@@ -1,6 +1,3 @@
-@import "mobile";
-@import "sidebar";
-@import "projects";
 @import "animations";
 
 $title-color: rgb(231, 115, 7);
@@ -34,7 +31,7 @@ blockquote {
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 // WELCOME SECTION
@@ -94,12 +91,22 @@ blockquote {
   margin-bottom: 60px;
   text-align: justify;
   blockquote {
-    margin: 20px 5% 0 5%;
+    margin: 0px 5% 0 5%;
   }
   p {
     margin: 20px 10% 0 10%;
     font-size: 1.5rem;
   }
+}
+.to-top-button {
+  height: 50px;
+  width: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1rem;
+  right: 20px;
+
+  background: green;
 }
 
 .section-header {
@@ -389,4 +396,106 @@ img.skills-icons {
 
 #resume-icon {
   border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  #quote {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .about-section > p {
+    font-size: 1rem;
+  }
+
+  .company-icon {
+    width: 75px;
+  }
+
+  .contact-section {
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  .contact-item {
+    font-size: 0.8rem;
+  }
+
+  //EXPERIENCE SECTION
+  // .experience-card {
+  //   flex-shrink: 1;
+  // }
+
+  .exp-card-header {
+    border-bottom: solid lightgray 1px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    display: flex;
+    color: rgb(231, 115, 7);
+    font-size: 1rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+  .company-icon {
+    img {
+      width: 25px;
+    }
+  }
+
+  .position-title {
+    margin-left: auto;
+    text-align: right;
+    font-size: 1rem;
+  }
+
+  .exp-card-footer {
+    border-top: solid lightgray 1px;
+    padding-top: 15px;
+  }
+
+  .experience-card {
+    width: 80%;
+  }
+
+  .project-image {
+    height: 230px;
+    max-width: 100%;
+    background: #e2deda;
+    object-fit: fill;
+  }
+
+  .projects-list {
+    padding: 0;
+  }
+
+  .project-card {
+    flex-shrink: 1;
+
+    width: 90%;
+  }
+
+  .award-body {
+    display: flex;
+    flex-direction: column;
+  }
+  #ab-award {
+    height: 81px;
+  }
+  .award-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  .award-icon {
+    margin: 5px;
+    max-height: 81px;
+
+    height: auto;
+    width: auto;
+  }
 }

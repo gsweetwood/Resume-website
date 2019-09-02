@@ -14,14 +14,15 @@ import Welcome from "./Welcome";
 class App extends Component {
   componentDidMount() {
     setTimeout(() => {
-      scroller.scrollTo("about-section", { duration: 1000, offset: -50 });
+      scroller.scrollTo("about-section", { duration: 1200, offset: -50 });
     }, 3500);
   }
+
   render() {
     return (
       <div className="App">
         <Welcome />
-        {/* <Sidebar /> */}
+
         <div className="main">
           <About />
           <Experience />
