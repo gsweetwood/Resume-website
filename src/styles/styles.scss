@@ -10,6 +10,7 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
 }
 
 h2 {
@@ -26,12 +27,9 @@ blockquote {
 }
 
 .App {
-  width: 100%;
-  background-color: rgb(238, 238, 238);
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
-  overflow: visible;
 }
 
 // WELCOME SECTION
@@ -101,12 +99,12 @@ blockquote {
 .to-top-button {
   height: 50px;
   width: 50px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 1rem;
-  right: 20px;
 
+  top: 0;
+  right: 20px;
+  position: sticky;
   background: green;
+  z-index: 100;
 }
 
 .section-header {
@@ -195,7 +193,6 @@ blockquote {
 .project-image {
   height: 360px;
   width: 100%;
-  max-width: 100%;
   object-fit: cover;
 }
 
@@ -476,7 +473,7 @@ img.skills-icons {
 
   .project-card {
     flex-shrink: 1;
-
+    margin: 30px 0 30px 0;
     width: 90%;
   }
 
