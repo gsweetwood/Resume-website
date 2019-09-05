@@ -244,7 +244,7 @@ blockquote {
 .skills-card {
   width: 80%;
   min-height: 220px;
-  margin: 30px 60px;
+  margin: 30px 5px;
   padding: 15px;
 }
 
@@ -395,6 +395,7 @@ img.skills-icons {
   border-radius: 10px;
 }
 
+//* MOBILE RESPONSIVENESS
 @media screen and (max-width: 480px) {
   #quote {
     font-size: 1rem;
@@ -420,11 +421,6 @@ img.skills-icons {
   .contact-item {
     font-size: 0.8rem;
   }
-
-  //EXPERIENCE SECTION
-  // .experience-card {
-  //   flex-shrink: 1;
-  // }
 
   .exp-card-header {
     border-bottom: solid lightgray 1px;
@@ -491,7 +487,6 @@ img.skills-icons {
   .award-icon {
     margin: 5px;
     max-height: 81px;
-
     height: auto;
     width: auto;
   }
