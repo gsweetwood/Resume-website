@@ -35,13 +35,13 @@ const Contact = () => (
       </a>
 
       <a
-        href="https://drive.google.com/file/d/1sG24YdX2TBJ_7-NYezE6oZMMfiHYITc4/view?usp=sharing"
+        href="https://drive.google.com/open?id=1PrmPHbK36zE_WaoKUJar_Ps_UiaQKXy0"
         className="contact-item"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img src={docIcon} className="contact-icon" id="resume-icon" />
-        <span>Downloadable Resume</span>
+        <span>Downloadable CV</span>
       </a>
     </div>
 

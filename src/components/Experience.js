@@ -5,17 +5,27 @@ import ibmIcon from "../images/ibm-icon.png";
 import olympusIcon from "../images/olympus-logo.png";
 import sunstarLogo from "../images/sunstar-logo.png";
 import sageProductsLogo from "../images/sage-products-logo.png";
+import awsLogo from "../images/aws-logo.png"
 
 const Experience = () => (
   <div id="experience" className="experience-section">
     <SectionHeader sectionHeader="experience" />
     <div className="experience-list">
       {/*  //IBM Consulting */}
+      <ExperienceCard companyIcon={awsLogo} companyName="Amazon" positionTitle="Software Development Engineer" positionDates="Nov 2019 - Present" positionLocation="Seattle, WA">
+        <ul>
+          <li>Design, build, and maintain IDE extensions and plugins to aid developers connect and use Amazon Web Services.</li>
+<li>Build new features and expand services to provide a better experience for customers.</li>
+<li>Implemented new telemetry to gather data that is used to guide decisions on which features to build.</li>
+<li>Resolve issues and debug problems for open source software.</li>
+<li>Reduced technical debt by refactoring legacy code to be more efficient, consistent, and testable.</li>
+        </ul>
+      </ExperienceCard>
       <ExperienceCard
         companyIcon={ibmIcon}
         companyName="IBM"
         positionTitle="Front-End Development Consultant"
-        positionDates="Jan 2019 - Present"
+        positionDates="Jan 2019 - June 2019"
         positionLocation="Remote"
       >
         <ul>
@@ -59,7 +69,7 @@ const Experience = () => (
         companyIcon={olympusIcon}
         companyName="Spiration d/b/a Olympus Respiratory America"
         positionTitle="Quality Engineer II"
-        positionDates="Dec 2017 - Present"
+        positionDates="Dec 2017 - Nov 2019"
         positionLocation="Redmond, WA"
       >
         <ul>
@@ -91,7 +101,7 @@ const Experience = () => (
         companyIcon={sageProductsLogo}
         companyName="Sage Products"
         positionTitle="New Product Development Engineer"
-        positionDates="May 2012 - Jun 2016"
+        positionDates="September 2011 - Jun 2016"
         positionLocation="Cary, IL"
       >
         <ul>
