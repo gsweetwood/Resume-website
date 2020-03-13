@@ -26,7 +26,7 @@ class App extends Component {
         <div className="main">
           <About />
           <Experience />
-          <Projects />
+          {/* <Projects /> */}
           <Skills />
           <Awards />
           <Education />

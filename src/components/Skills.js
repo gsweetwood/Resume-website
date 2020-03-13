@@ -14,7 +14,6 @@ import bootstrapIcon from "../images/icons/bootstrap.png";
 import cplusplusIcon from "../images/icons/cpp-logo.png";
 import javaIcon from "../images/icons/java-logo.png";
 import solidworksIcon from "../images/icons/solidworks.png";
-import mayaIcon from "../images/icons/maya-logo.png";
 
 const Skills = () => (
   <div id="skills" className="skills-section">
@@ -82,10 +81,6 @@ const Skills = () => (
         <div className="icon-set">
           <img src={solidworksIcon} className="skills-icons" />
           SolidWorks
-        </div>
-        <div className="icon-set">
-          <img src={mayaIcon} className="skills-icons" />
-          Autodesk Maya
         </div>
       </SkillsCard>
     </div>
